@@ -15,6 +15,13 @@ module.exports.config = {
 };
 
 module.exports.handleEvent = async function ({ api, event }) {
+  console.log(
+  "[AUTOREPLY TEST]",
+  "Message:",
+  event.body,
+  "Type:",
+  event.type
+);
   const { threadID, messageID, body, senderID } = event;
   if (!body) return;
 
