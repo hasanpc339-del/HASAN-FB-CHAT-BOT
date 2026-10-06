@@ -12,7 +12,6 @@ module.exports.config = {
   usePrefix: false,
   commandCategory: "Chat",
   cooldowns: 0
-  handleEvent: true
 };
 
 module.exports.handleEvent = async function ({ api, event }) {
