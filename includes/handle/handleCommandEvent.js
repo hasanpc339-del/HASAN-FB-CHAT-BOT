@@ -19,9 +19,24 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
 
         if (isDevOnly && !isDeveloper) return;
         if (isAdminOnly && !isDeveloper && !isBotAdmin) return;
-        for (const eventReg of eventRegistered) {
-            const cmd = commands.get(eventReg);
-            if (!cmd || typeof cmd.handleEvent !== 'function') continue;
+        console.log(
+  "[EVENT DEBUG]",
+  "Registered Events:",
+  eventRegistered
+);
+
+for (const eventReg of eventRegistered) {
+
+  console.log(
+    "[EVENT DEBUG]",
+    "Running:",
+    eventReg
+  );
+
+  const cmd = commands.get(eventReg);
+
+  if (!cmd || typeof cmd.handleEvent !== "function")
+    continue;
             var getText2;
 
             if (cmd.languages && typeof cmd.languages == 'object') {
