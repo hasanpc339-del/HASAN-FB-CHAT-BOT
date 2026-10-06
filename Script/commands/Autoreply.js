@@ -12,6 +12,7 @@ module.exports.config = {
   usePrefix: false,
   commandCategory: "Chat",
   cooldowns: 0
+  handleEvent: true
 };
 
 module.exports.handleEvent = async function ({ api, event }) {
@@ -36,7 +37,7 @@ module.exports.handleEvent = async function ({ api, event }) {
     "admin": "He is SHAHADAT SAHU তাকে সবাই Admin SAHU হিসেবে চিনে😘☺️",
     "babi": "এ তো হাছিনা হে মেরে দিলকি দারকান হে মেরি জান হে😍.",
     "chup": "তুই চুপ চুপ কর পাগল ছাগল",
-    "Assalamualaikum": "Walaikumassalam❤️‍🩹",
+    "assalamualaikum": "Walaikumassalam❤️‍🩹",
     "fork": "https://gitlab.com/shahadat-sahu/SHAHADAT-CHAT-BOT.git",
     "kiss me": "তুমি পঁচা তোমাকে কিস দিবো না 🤭",
     "thanks": "এতো ধন্যবাদ না দিয়ে আমার বস সাহু রে তোর গার্লফ্রেন্ড টা দিয়ে দে..!🐸🥵",
